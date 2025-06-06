@@ -2,11 +2,14 @@ import tkinter as tk
 
 root = tk.Tk()
 root.title("Программа 33")
-root.configure(bg="blue")
-root.geometry("400x300")
+root.geometry("800x600")  # Увеличим размер, чтобы было видно
 
-label = tk.Label(root, text="Обновление применено!", bg="blue", fg="white", font=("Arial", 16))
+# Создаём фрейм на весь экран с синим фоном
+frame = tk.Frame(root, bg="blue")
+frame.pack(fill="both", expand=True)
+
+# Надпись по центру
+label = tk.Label(frame, text="Обновление применено!", bg="blue", fg="white", font=("Arial", 24))
 label.pack(expand=True)
 
 root.mainloop()
-
