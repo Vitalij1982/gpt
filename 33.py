@@ -1,10 +1,11 @@
 import tkinter as tk
 
 root = tk.Tk()
-root.title("Программа 33")
-root.geometry("400x300")
+root.title("Обновление")
+root.geometry("800x600")
+root.configure(bg="blue")  # Устанавливаем синий фон
 
-label = tk.Label(root, text="24", font=("Arial", 72), fg="black")
+label = tk.Label(root, text="Программа обновлена", font=("Arial", 28), fg="white", bg="blue")
 label.pack(expand=True)
 
 root.mainloop()
